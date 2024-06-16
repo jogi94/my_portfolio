@@ -34,7 +34,7 @@ setup:
 
 # Install the packages needed for the application.
 install:
-    @pnpm install
+	@pnpm install
 	@poetry update
 
 # Clean commands (examples, you can define your own clean-up commands)
