@@ -56,7 +56,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": str(BASE_DIR / "app.sqlite3"),
+        "NAME": str(BASE_DIR / "portfolio.sqlite3"),
         "ATOMIC_REQUESTS": True,
     }
 }
