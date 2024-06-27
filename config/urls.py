@@ -9,6 +9,7 @@ from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView
 from drf_spectacular.views import SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
+from schema_graph.views import Schema
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -71,4 +72,9 @@ if settings.DEBUG:
 
 urlpatterns += [
     path('login-acitivites/', include('loginActivities.urls', namespace='loginActivities')),
+]
+
+urlpatterns += [
+    # On Django 2+:
+    path("schema/", Schema.as_view()),
 ]

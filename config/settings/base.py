@@ -99,6 +99,7 @@ THIRD_PARTY_APPS = [
     "drf_spectacular",
     "django_tables2",
     "login_history",
+    'schema_graph',
 ]
 
 LOCAL_APPS = [
