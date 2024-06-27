@@ -67,3 +67,8 @@ if settings.DEBUG:
         import debug_toolbar
 
         urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
+
+
+urlpatterns += [
+    path('login-acitivites/', include('loginActivities.urls', namespace='loginActivities')),
+]
