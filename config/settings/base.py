@@ -100,6 +100,7 @@ THIRD_PARTY_APPS = [
     "django_tables2",
     "login_history",
     'schema_graph',
+    'easyaudit',
 ]
 
 LOCAL_APPS = [
@@ -165,6 +166,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "app.users.middlewares.ThreadLocalMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    'easyaudit.middleware.easyaudit.EasyAuditMiddleware',
 ]
 
 # STATIC
