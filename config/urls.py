@@ -78,3 +78,8 @@ urlpatterns += [
     # On Django 2+:
     path("schema/", Schema.as_view()),
 ]
+
+# Company app
+urlpatterns += [
+    path('company/', include('company.urls', namespace='company')),
+]
